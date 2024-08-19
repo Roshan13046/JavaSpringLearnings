@@ -4,6 +4,12 @@ public class MigratoryBirds extends Bird{
     String foodType;
     String travellingRouteDistance;
 
+    MigratoryBirds(){
+        name  = null;
+        foodType = null;
+        travellingRouteDistance = null;
+    }
+
     @Override
     public String getFoodType() {
         return foodType;
