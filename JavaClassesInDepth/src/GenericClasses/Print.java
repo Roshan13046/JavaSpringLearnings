@@ -3,7 +3,14 @@ package GenericClasses;
 public class Print<T> {
     T value;
 
-    private T getValue(){
+    Print(){
+        value = null;
+    }
+
+    Print(T value){
+        value = value;
+    }
+    public T getValue(){
         return value;
     }
 
@@ -11,14 +18,14 @@ public class Print<T> {
         value = value;
     }
 
-    public void printValue(){
-        System.out.println(getValue());
+    public void printValue(T value){
+        System.out.println(value);
     }
 
     public static void main(String[] args) {
         Print<Integer> integerPrint = new Print<>();
         integerPrint.setValue(24);
-        integerPrint.printValue();
+        integerPrint.printValue(integerPrint.getValue());
     }
 
 }
