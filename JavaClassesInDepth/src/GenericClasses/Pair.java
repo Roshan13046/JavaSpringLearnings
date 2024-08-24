@@ -25,6 +25,12 @@ public class Pair <K,V>{
         value = value;
     }
 
+    public Pair<K,V> get(){
+        Pair<K,V> temp = new Pair<>();
+        temp.put(getKey(), getValue());
+        return temp;
+    }
+
     public static void main(String[] args) {
         Pair<String, Integer> stringCount = new Pair<>();
         Pair<Integer, Boolean> isIntegerPresent = new Pair<>();
