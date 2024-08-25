@@ -22,6 +22,7 @@ public class Print<T > {
         System.out.println(value);
     }
 
+
     public static void main(String[] args) {
         Print<Integer> integerPrint = new Print<>();
         integerPrint.setValue(24);
