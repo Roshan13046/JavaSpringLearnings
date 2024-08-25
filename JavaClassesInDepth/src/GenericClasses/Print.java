@@ -1,6 +1,6 @@
 package GenericClasses;
 
-public class Print<T> {
+public class Print<T > {
     T value;
 
     Print(){
