@@ -9,6 +9,14 @@ public class Display {
         ;
     }
 
+    //Unbound wild card type method : used when we don't know the exact type of the object/parameters passed
+    //and the computation mostly happens using the methods and properties of object class
+    public void computeListUnboundWildCardMethod(List<?> l1, List<?> l2 ){
+        Object obj = l1.get(0);
+        Object obj2 = l2.get(0);
+        System.out.println(obj.equals(obj2));
+    }
+
     //Wild card : Lower Bound syntax
     public void display2(List<? super Bus> list){
         ;
