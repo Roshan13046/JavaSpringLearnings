@@ -11,5 +11,9 @@ public class Main {
         System.out.println(WeekEnum.valueOf("FRIDAY"));
         WeekEnum weekDay = WeekEnum.valueOf("MONDAY");
         System.out.println(weekDay.name());
+
+
+        EnumMonths month = EnumMonths.findFestiveMonth("Republic Day");
+        System.out.println(month.getVal() + " , " + month.getComment());
     }
 }
