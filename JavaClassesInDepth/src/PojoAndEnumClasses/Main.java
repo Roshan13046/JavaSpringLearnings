@@ -16,9 +16,16 @@ public class Main {
         EnumMonths month = EnumMonths.findFestiveMonth("Republic Day");
         System.out.println(month.getVal() + " , " + month.getComment());
 
+        //Method overriding example
         EnumMonths.JANUARY.monthDetails();
         EnumMonths.MARCH.monthDetails();
         EnumMonths.APRIL.monthDetails();
+
+        //Abstract Method in Enums example
+        EnumMonths janEnum = EnumMonths.JANUARY;
+        janEnum.dummyMethod();
+        EnumMonths.FEBRUARY.dummyMethod();
+
 
     }
 }

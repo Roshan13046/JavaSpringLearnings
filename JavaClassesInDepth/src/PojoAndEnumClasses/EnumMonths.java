@@ -6,15 +6,37 @@ public enum EnumMonths {
         public void monthDetails(){
             System.out.println("Jan Month, first month, Republic day");
         }
+
+        @Override
+        public void dummyMethod() {
+            System.out.println("January dummy abstract method definition");
+        }
     },
     FEBRUARY(2, "february month"){
         @Override
         public void monthDetails(){
             System.out.println("Feb Month, Feb month, Shivratri day");
         }
+
+        @Override
+        public void dummyMethod() {
+            System.out.println("February dummy abstract method definition");
+        }
+
     },
-    MARCH(3, "march month"),
-    APRIL(4, "april month");
+    MARCH(3, "march month"){
+        @Override
+        public void dummyMethod() {
+            System.out.println("March dummy abstract method definition");
+        }
+    },
+
+    APRIL(4, "april month"){
+        @Override
+        public void dummyMethod() {
+            System.out.println("April dummy abstract method definition");
+        }
+    };
 
     private int val;
     private String comment;
@@ -37,6 +59,10 @@ public enum EnumMonths {
         System.out.println("Default monthDetails method called");
     }
 
+    //abstract methods in enum
+    public abstract void dummyMethod();
+
+    //method belonging to ENUM class
     public static EnumMonths findFestiveMonth(String festival){
         if(festival.equals("Republic Day")){
             for(EnumMonths enumMonths : EnumMonths.values()){
@@ -47,4 +73,5 @@ public enum EnumMonths {
         }
         return null;
     }
+
 }
