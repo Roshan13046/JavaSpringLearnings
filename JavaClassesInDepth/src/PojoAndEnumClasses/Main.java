@@ -15,5 +15,10 @@ public class Main {
 
         EnumMonths month = EnumMonths.findFestiveMonth("Republic Day");
         System.out.println(month.getVal() + " , " + month.getComment());
+
+        EnumMonths.JANUARY.monthDetails();
+        EnumMonths.MARCH.monthDetails();
+        EnumMonths.APRIL.monthDetails();
+
     }
 }
