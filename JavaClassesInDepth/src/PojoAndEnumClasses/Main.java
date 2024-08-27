@@ -26,6 +26,8 @@ public class Main {
         janEnum.dummyMethod();
         EnumMonths.FEBRUARY.dummyMethod();
 
-
+        //Interface methods in Enums example
+        EnumMonths.JANUARY.interfaceMethodToUpperCase();
+        System.out.println("After Upper case method : " + EnumMonths.JANUARY.getComment());
     }
 }

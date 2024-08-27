@@ -1,6 +1,6 @@
 package PojoAndEnumClasses;
 
-public enum EnumMonths {
+public enum EnumMonths implements StringManipulationInterface {
     JANUARY(1, "january month"){
         @Override
         public void monthDetails(){
@@ -61,6 +61,12 @@ public enum EnumMonths {
 
     //abstract methods in enum
     public abstract void dummyMethod();
+
+    //Interface methods defination in enum
+    @Override
+    public void interfaceMethodToUpperCase() {
+        this.comment =  this.getComment().toUpperCase();
+    }
 
     //method belonging to ENUM class
     public static EnumMonths findFestiveMonth(String festival){
