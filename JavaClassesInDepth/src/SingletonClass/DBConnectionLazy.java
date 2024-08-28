@@ -10,7 +10,7 @@ public class DBConnectionLazy {
     }
 
     //Lazy initialization
-    public DBConnectionLazy getInstance(){
+    public static DBConnectionLazy getInstance(){
         if(dbConnectionLazy == null){
             dbConnectionLazy = new DBConnectionLazy();
         }
