@@ -1,7 +1,7 @@
 package SingletonClass;
 
 public class DBConnectionSynchronized {
-    private static DBConnectionSynchronized dbConnectionSynchronized = new DBConnectionSynchronized();
+    private static DBConnectionSynchronized dbConnectionSynchronized;
 
     private DBConnectionSynchronized(){
 

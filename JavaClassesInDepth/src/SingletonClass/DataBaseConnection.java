@@ -7,7 +7,8 @@ public class DataBaseConnection {
 //    multiple db queries and fetch the data,
 
     //DisAdv:
-//    Even if the DB is not used, the object still get's created and stored into the memory, which is unnecessary creation
+//    Even if the DB is not used, the object still get's created and stored into the memory,
+//    which is unnecessary creation
 
     //Eager Initialization Singleton class
     //private bcz the object should be accessed with this class only,
