@@ -11,7 +11,7 @@ public class Main {
         sizes.add("M");
         sizes.add("XXL");
         MyImmutableClass myImmutableClass = new MyImmutableClass("Roshan", sizes );
-
+        sizes.add("SS");
         myImmutableClass.getName();
         System.out.println("Array List size: " + myImmutableClass.getClothSize().size());
         myImmutableClass.getClothSize().add("S");
