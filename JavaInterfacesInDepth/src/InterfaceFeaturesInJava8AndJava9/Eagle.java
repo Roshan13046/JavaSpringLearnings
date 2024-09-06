@@ -8,6 +8,6 @@ public class Eagle implements Bird{
 
     @Override
     public void minHeightOfFly() {
-        System.out.println("Min Height of fly 60ft");
+        System.out.println("190 ft's min fly height");
     }
 }

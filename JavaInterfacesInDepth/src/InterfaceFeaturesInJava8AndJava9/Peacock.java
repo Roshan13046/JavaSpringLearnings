@@ -6,8 +6,5 @@ public class Peacock implements Bird{
         System.out.println("Peacock Bird can fly");
     }
 
-    @Override
-    public void minHeightOfFly() {
-        System.out.println("Min Height of fly 60ft");
-    }
+
 }
