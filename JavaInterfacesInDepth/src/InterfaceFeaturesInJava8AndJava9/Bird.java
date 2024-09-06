@@ -12,4 +12,6 @@ public interface Bird {
     default boolean canBreathe(){
         return true;
     }
+
+
 }
