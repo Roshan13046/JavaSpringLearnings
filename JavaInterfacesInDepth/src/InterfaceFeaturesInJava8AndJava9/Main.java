@@ -5,5 +5,11 @@ public class Main {
         //way 1 to implement interfaces having default method
         Tiger tiger = new Tiger();
         tiger.canBreathe();
+
+        Eagle eagle = new Eagle();
+        eagle.hasDigestiveSystem();
+//        if(LivingThing.canEat()){
+//            System.out.println("Can Eat");
+//        };
     }
 }
