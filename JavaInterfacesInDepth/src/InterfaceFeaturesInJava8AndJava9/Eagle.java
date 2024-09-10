@@ -18,4 +18,15 @@ public class Eagle implements Bird{
             System.out.println("Eagle don't have any Digestive system");
         }
     }
+
+    public void hasAge(){
+        if(LivingThing.checkIfCanGrow()){
+            System.out.println("Has Limited Age Life");
+        }else{
+            System.out.println("Alive for Limitless span");
+        }
+
+    }
+
+
 }
