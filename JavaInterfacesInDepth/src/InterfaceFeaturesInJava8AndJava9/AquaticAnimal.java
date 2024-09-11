@@ -15,4 +15,6 @@ public interface AquaticAnimal {
         System.out.println("Yes, can breathe using oxygen dissolved in water");
     }
 
+    String toString();//Object class method
+
 }

@@ -13,4 +13,6 @@ public interface Amphibians {
     public static void canWalk(){
         System.out.println("Yes, can glide, walk, move on Land");
     }
+
+    String toString();//Object class method
 }
