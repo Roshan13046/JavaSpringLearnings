@@ -12,7 +12,7 @@ public interface LivingThing {
 
     //trying to call the private method from default ones
     default boolean checkIfCanMove(){
-        //non static methods can access both static and non static methods
+        //non static methods can access both static and non-static methods
         System.out.println(canGrow());//static methods
         System.out.println(canMove());//non-static private method
         System.out.println(checkIfCanGrow());//static public method
