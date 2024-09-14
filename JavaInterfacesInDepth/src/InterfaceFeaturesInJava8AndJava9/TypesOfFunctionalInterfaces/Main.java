@@ -24,6 +24,21 @@ public class Main {
 
         System.out.println(supObj.get());
         System.out.println(supObj2.get());
+
+        //Function Functional Interface
+        Function<Integer, String> funObj = (Integer val)->{
+            return val.toString();
+        };
+        System.out.println(  funObj.apply(1234));
+        System.out.println(funObj.apply(23411));
+
+        //Predicate Functional Interface
+        Predicate<Integer> predicateObj = (Integer val)->{
+          return val > 20;
+        };
+
+        System.out.println(predicateObj.testGreater(19));;
+        System.out.println(predicateObj.testGreater(34));;
     }
 
 
