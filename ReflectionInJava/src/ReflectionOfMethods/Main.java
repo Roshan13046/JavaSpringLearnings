@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws NoSuchFieldException, IllegalAccessException{
         //reflection of Methods
         Class animalClassObj = Animal.class;
 
@@ -54,6 +54,18 @@ public class Main {
             System.out.println("***********************************************************");
         }
 
+        //setting the field values using reflection
+        Class animalClassObj3 = Animal.class;
 
+        Animal animalObj = new Animal();
+
+        //Setting the public field value
+        animalObj.breed = "Omnivarious";
+        Field field = animalClassObj3.getField("breed");
+        System.out.println("Before setting animalObj.breed: " + animalObj.breed);
+        field.set(animalObj, "Carnivarious");
+        System.out.println("After setting animalObj.breed: " + animalObj.breed);
+
+        //Setting the private field value
     }
 }
