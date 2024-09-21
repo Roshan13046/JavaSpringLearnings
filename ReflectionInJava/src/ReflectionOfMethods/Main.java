@@ -60,6 +60,7 @@ public class Main {
         Animal animalObj = new Animal();
 
         //Setting the public field value
+        System.out.println("************************ Setting the public field value ****************************************");
         animalObj.breed = "Omnivarious";
         Field field = animalClassObj3.getField("breed");
         System.out.println("Before setting animalObj.breed: " + animalObj.breed);
@@ -67,5 +68,17 @@ public class Main {
         System.out.println("After setting animalObj.breed: " + animalObj.breed);
 
         //Setting the private field value
+        System.out.println("************************************* Setting the private field value ***************************");
+        animalObj.setName("Tiger");
+        System.out.println("Before setting animalObj.name: " + animalObj.getName());
+
+        //getDeclaredField this gives us the public and private field
+        Field privateField = animalClassObj3.getDeclaredField("name");
+        //Note: setAccessible(true) it's important to add this to access the private field
+        privateField.setAccessible(true);
+        privateField.set(animalObj, "Cheetah");
+        System.out.println("After setting private field animalObj.name: " + animalObj.getName());
+
+        //DisAdvantage: Reflection on Fields breaks Encapsulation concept, as it can access and modify the private field now
     }
 }
