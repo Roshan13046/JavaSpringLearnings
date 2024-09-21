@@ -1,4 +1,4 @@
-package ReflectionOfMethods;
+package ReflectionOfMethodsFields;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

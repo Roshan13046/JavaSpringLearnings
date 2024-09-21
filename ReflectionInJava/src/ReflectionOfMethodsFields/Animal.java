@@ -1,10 +1,14 @@
-package ReflectionOfMethods;
+package ReflectionOfMethodsFields;
 
 public class Animal {
 
     public String breed;
     private String name;
     protected String age;
+
+    public Animal() {
+
+    }
 
     public String getBreed() {
         return breed;
