@@ -1,6 +1,8 @@
 package ReflectionOfMethods;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,5 +30,30 @@ public class Main {
             System.out.println("Method Declaring class: " + method.getDeclaringClass());
             System.out.println("***********************************************************");
         }
+
+        //Reflect fields and access it's metaData
+        Class animalClassObj2 = Animal.class;
+
+        //getting the public fields
+        Field[] fields = animalClassObj2.getFields();
+        System.out.println("\n\n\n--------------------------     Fields Reflection     --------------------------------------");
+        for(Field field : fields){
+            System.out.println("Field Name: " + field.getName());
+            System.out.println("Field Type: " + field.getType());
+            System.out.println("Field Modifier: " + Modifier.toString(field.getModifiers()));
+            System.out.println("***********************************************************");
+        }
+
+        //getting the public and private fields
+        Field[] declaredFields = animalClassObj2.getDeclaredFields();
+        System.out.println("\n\n\n--------------------------  Declared Fields Reflection     --------------------------------------");
+        for(Field field : declaredFields){
+            System.out.println("Field Name: " + field.getName());
+            System.out.println("Field Type: " + field.getType());
+            System.out.println("Field Modifier: " + Modifier.toString(field.getModifiers()));
+            System.out.println("***********************************************************");
+        }
+
+
     }
 }
