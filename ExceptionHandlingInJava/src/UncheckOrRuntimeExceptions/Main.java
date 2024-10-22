@@ -2,6 +2,10 @@ package UncheckOrRuntimeExceptions;
 
 public class Main {
     public static void main(String[] args) {
+        //IllegalArgumentException : NumberFormatException
+        int value = Integer.parseInt("123");
+        int value2 = Integer.parseInt("abcRoshan");
+
         //NullPointerException
         Object object = null ;
         System.out.println(object.getClass());
