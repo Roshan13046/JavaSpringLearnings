@@ -2,13 +2,19 @@ package UncheckOrRuntimeExceptions;
 
 public class Main {
     public static void main(String[] args) {
-        //IndexOutOfBoundException
+        //NullPointerException
+        Object object = null ;
+        System.out.println(object.getClass());
+        String str2 = null;
+        System.out.println(str2.charAt(2));
 
-        //StringIndexOutOfBoundsException
+
+        //IndexOutOfBoundException
+        //1.StringIndexOutOfBoundsException
         String str = "ROSHAN";
         System.out.println(str.charAt(6));
 
-        //ArrayIndexOutOfBoundsException
+        //2.ArrayIndexOutOfBoundsException
         int [] arr = new int[3];
         System.out.println(arr[5]);
 
