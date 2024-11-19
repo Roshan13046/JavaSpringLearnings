@@ -18,6 +18,7 @@ public class SharedResource {
     public synchronized void consumeItem(){
         System.out.println("Inside consumeItem() invoked by thread : " + Thread.currentThread().getName());
 
+        //using while loop Reason: to avoid "spurious wake ups" sometimes due to system noise
         while(!itemAvailable){
             try{
                 System.out.println(" thread " + Thread.currentThread().getName() + " is waiting now");
