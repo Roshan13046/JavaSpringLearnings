@@ -39,6 +39,13 @@ public class Main {
         System.out.println("thread1 is resumed");
         thread1.resume();
 
+        try{
+            // using join, the main thread will wait until thread1 , thread2 tasks are completed
+            thread1.join();
+            thread2.join();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         System.out.println("Main thread has finished exceuting it's task");
 
     }
