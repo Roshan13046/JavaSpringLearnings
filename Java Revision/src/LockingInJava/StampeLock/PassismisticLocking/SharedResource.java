@@ -23,6 +23,7 @@ public class SharedResource {
     }
 
 
+
     public void consumer(){
         long stamp = lock.writeLock();
         System.out.println("Consumer write stamp : " + stamp + " by " + Thread.currentThread().getName());

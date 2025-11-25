@@ -31,6 +31,7 @@ public class MonitorLock {
 //                    obj.task1();
 //                }
 //        );
+
         MonitorThread1Runnable monitorThread1Runnable = new MonitorThread1Runnable(obj);
         Thread thread1 = new Thread(monitorThread1Runnable);
 
