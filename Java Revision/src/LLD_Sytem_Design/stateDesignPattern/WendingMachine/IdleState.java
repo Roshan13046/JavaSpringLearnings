@@ -1,12 +1,10 @@
 package LLD_Sytem_Design.stateDesignPattern.WendingMachine;
 
-import java.util.ArrayList;
-
-public class IdleState extends State{
+public abstract class IdleState extends State{
     public IdleState(){}
 
     public IdleState(VendingMachine machine){
-        machine.setCoinList(new ArrayList<>());
+//        machine.setCoinList(new ArrayList<>());
     }
 
     @Override
